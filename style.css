@@ -1,0 +1,142 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0056b3;
+}
+
+/* Hero Section */
+#home {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#home img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-color: #FFC107;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Resume Section */
+#resume {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+#resume h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.resume-content h4 {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.skill-item {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 80px 20px;
+    background-color: #ffffff;
+}
+
+.or-divider{
+    display: flex;
+align-items: center;
+text-align: center;
+margin: 20px 0;
+}
+.or-divider::before, .or-divider::after {
+content: '';
+flex: 1;
+border-bottom: 1px solid #ccc;
+}
+.or-divider:not(:empty)::after {
+margin-left: .25em;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+}
